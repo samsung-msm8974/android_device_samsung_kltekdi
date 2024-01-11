@@ -42,7 +42,7 @@ void vendor_load_properties()
     if (bootloader.find("SC04F") == 0) {
         property_override("ro.build.description", "kltedcm-user 6.0.1 MMB29M SC04FOMU1XQH1 release-keys");
         set_ro_product_prop("device", "SC-04F");
-        set_ro_product_prop("fingerprint", "samsung/SC-04F/SC-04F:6.0.1/MMB29M/SC04FOMU1XQH1:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/SC-04F/SC-04F:6.0.1/MMB29M/SC04FOMU1XQH1:user/release-keys");
         set_ro_product_prop("model", "SC-04F");
         set_ro_product_prop("name", "SC-04F");
         gsm_properties("9", "dcm");
@@ -50,7 +50,7 @@ void vendor_load_properties()
     else if (bootloader.find("SCL23") == 0) {
         property_override("ro.build.description", "kltekdi-user 6.0.1 MMB29M SCL23KDU1DQA4 release-keys");
         set_ro_product_prop("device", "SCL23");
-        set_ro_product_prop("fingerprint", "KDDI/SCL23/SCL23:6.0.1/MMB29M/SCL23KDU1DQA4:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "KDDI/SCL23/SCL23:6.0.1/MMB29M/SCL23KDU1DQA4:user/release-keys");
         set_ro_product_prop("model", "SCL23");
         set_ro_product_prop("name", "SCL23");
         property_override("telephony.sms.pseudo_multipart", "1");
